@@ -1,0 +1,4 @@
+# src/Blogger/BlogBundle/Resources/config/config.yml
+
+parameters:
+    

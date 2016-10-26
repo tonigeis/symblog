@@ -1,0 +1,24 @@
+adminblog_index:
+    path:     /
+    defaults: { _controller: "BloggerBlogBundle:AdminBlog:index" }
+    methods:  GET
+
+adminblog_show:
+    path:     /{id}/show
+    defaults: { _controller: "BloggerBlogBundle:AdminBlog:show" }
+    methods:  GET
+
+adminblog_new:
+    path:     /new
+    defaults: { _controller: "BloggerBlogBundle:AdminBlog:new" }
+    methods:  [GET, POST]
+
+adminblog_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BloggerBlogBundle:AdminBlog:edit" }
+    methods:  [GET, POST]
+
+adminblog_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "BloggerBlogBundle:AdminBlog:delete" }
+    methods:  DELETE
